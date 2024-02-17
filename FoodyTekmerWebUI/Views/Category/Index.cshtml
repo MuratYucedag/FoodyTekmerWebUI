@@ -22,13 +22,13 @@
             <tr>
                 <td>@item.CategoryId</td>
                 <td>@item.CategoryName</td>
-                <td><a href="#" class="btn btn-danger">Sil</a></td>
-                <td><a href="#" class="btn btn-success">Güncelle</a></td>
+                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Güncelle</a></td>
             </tr>
         }
 
 
     </table>
-    <a href="#" class="btn btn-primary">Yeni Kategori Girişi</a>
+    <a href="/Category/CreateCategory" class="btn btn-primary">Yeni Kategori Girişi</a>
 
 </div>
