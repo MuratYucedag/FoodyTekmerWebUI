@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FoodyTekmerBusinessLayer\FoodyTekmerBusinessLayer.csproj" />
     <ProjectReference Include="..\FoodyTekmerDataAccessLayer\FoodyTekmerDataAccessLayer.csproj" />
     <ProjectReference Include="..\FoodyTekmerEntityLayer\FoodyTekmerEntityLayer.csproj" />
   </ItemGroup>
