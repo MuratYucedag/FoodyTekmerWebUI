@@ -5,37 +5,36 @@
 }
 
 <h2># Ürün Listesi</h2>
-    <table class="table table-bordered">
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ürün Adı</th>
+        <th>Eski Fiyat</th>
+        <th>Yeni Fiyat</th>
+        <th>Durum</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
         <tr>
-            <th>#</th>
-            <th>Ürün Adı</th>
-            <th>Eski Fiyat</th>
-            <th>Yeni Fiyat</th>
-            <th>Durum</th>
-            <th>Sil</th>
-            <th>Güncelle</th>
-        </tr>
-        @foreach(var item in Model)
-        {
-            <tr>
-                <td>@item.ProductId</td>
-                <td>@item.Name</td>
-                <td>@item.OldPrice</td>
-                <td>@item.NewPrice</td>
-                <td>
-                @if (@item.Status==true)
+            <td>@item.ProductId</td>
+            <td>@item.Name</td>
+            <td>@item.OldPrice</td>
+            <td>@item.NewPrice</td>
+            <td>
+                @if (@item.Status == true)
                 {
-                    <span class="bg-success p-1 text-white">Aktif</span>
+                    <span class="bg-warning p-1 text-white">Aktif</span>
                 }
                 else
                 {
-                    <span class="bg-danger p-1 text-white">Pasif</span>
+                    <span class="bg-dark p-1 text-white">Pasif</span>
                 }
-                    
-                </td>
-                <td><a href="#" class="btn btn-danger">Sil</a></td>
-                <td><a href="#" class="btn btn-success">Güncelle</a></td>
-            </tr>
-        }
-    </table>
-    <a href="#" class="btn btn-primary">Yeni Ürün Girişi</a>
+            </td>
+            <td><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Product/CreateProduct/" class="btn btn-primary">Yeni Ürün Girişi</a>
