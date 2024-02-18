@@ -18,7 +18,7 @@ namespace FoodyTekmerBusinessLayer.Concrete
         }
         public void TAdd(Product entity)
         {
-            if (entity.Name != "" && entity.Name.Length <= 3 && entity.NewPrice > 0)
+            if (entity.Name != "" && entity.Name.Length >= 3 && entity.NewPrice > 0)
             {
                 _productDal.Add(entity);
             }

@@ -1,13 +1,10 @@
 ﻿@model List<FoodyTekmerEntityLayer.Concrete.Product>
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-<div class="container">
-    <br /><br />
+<h2># Ürün Listesi</h2>
     <table class="table table-bordered">
         <tr>
             <th>#</th>
@@ -32,4 +29,3 @@
         }
     </table>
     <a href="#" class="btn btn-primary">Yeni Ürün Girişi</a>
-</div>
