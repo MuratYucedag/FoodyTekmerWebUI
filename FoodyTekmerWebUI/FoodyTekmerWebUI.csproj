@@ -19,4 +19,8 @@
     <ProjectReference Include="..\FoodyTekmerEntityLayer\FoodyTekmerEntityLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Shared\Components\ProductListComponentPartial\" />
+  </ItemGroup>
+
 </Project>
