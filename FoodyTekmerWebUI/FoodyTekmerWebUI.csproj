@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\sidebar-03\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\css\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\css\bootstrap\mixins\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\fonts\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\images\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\js\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\scss\.DS_Store" />
+    <None Include="wwwroot\sidebar-03\scss\bootstrap\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.27">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
