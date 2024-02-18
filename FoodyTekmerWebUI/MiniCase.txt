@@ -1,0 +1,1 @@
+﻿Ürünlere Durumu eklerken durum kısmında true-false ifadesi yerine "aktif-pasif" yazan ve bu aktif pasif ifadelerinde aktif değeler yeşil, pasif değerler turuncu bir span içinde gösteren uygulama

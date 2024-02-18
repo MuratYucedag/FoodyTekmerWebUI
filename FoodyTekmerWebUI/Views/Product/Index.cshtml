@@ -22,7 +22,17 @@
                 <td>@item.Name</td>
                 <td>@item.OldPrice</td>
                 <td>@item.NewPrice</td>
-                <td>@item.Status</td>
+                <td>
+                @if (@item.Status==true)
+                {
+                    <span class="bg-success p-1 text-white">Aktif</span>
+                }
+                else
+                {
+                    <span class="bg-danger p-1 text-white">Pasif</span>
+                }
+                    
+                </td>
                 <td><a href="#" class="btn btn-danger">Sil</a></td>
                 <td><a href="#" class="btn btn-success">Güncelle</a></td>
             </tr>
